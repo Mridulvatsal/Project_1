@@ -1,0 +1,108 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ACHIEVEMENTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+.about__achievements{
+    margin-top:3rem;
+}
+.about__achievements-container{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    margin-top:7rem;
+    gap:5rem;
+}
+.about__achievements-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.achievements__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1.5rem;
+}
+.achievement__card{
+    background: rgba(61, 0, 47, 0.650);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.achievement__card:hover{
+    box-shadow: 0 0 20px rgb(255, 0, 195);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+.achievement__card :nth-child(2).achievement__icon{
+    background: var(--color-success);
+}
+.achievement__card :nth-child(3).achievement__icon{
+    background: var(--color-primary);
+}
+.achievement__icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.achievement__card p{
+    margin-top:1rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ABOUT TEAM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+.team{
+    background:rgba(61, 0, 47, 0.650);
+    box-shadow:0 0 22px rgb(255, 0, 195) ;
+    margin-top:8rem ;
+}
+.team >h2{
+    margin-top: 2.5rem;
+}
+.team__container{
+    display:grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(4,1fr);
+    gap:3rem;
+
+}
+.team__member{
+    background:transparent ;
+    padding:1.3rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;  
+    filter: saturate(0);
+    position:relative;
+    overflow:hidden;
+}
+.team__member:hover{
+    background:rgb(123, 13, 97) ;
+    box-shadow: 0 0 20px rgb(255, 0, 195);
+    filter: saturate(1);
+    transition: all 500ms ease-in-out;  
+}
+
+.team__member-info *{
+    text-align: center;
+    margin-top:1.4rem;
+}
+.team__member-info p{
+    font-size: medium;
+    text-shadow: 0 0 10px;
+}
+.team__member-socials{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:-100%;
+    display:flex;
+    flex-direction: column;
+    background:rgb(50, 3, 30);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.3) ;
+    transition: all 600ms ease-in-out;
+}
+.team__member:hover .team__member-socials{
+    right:0;
+
+}
+.team__member-socials a{
+    padding:0.4rem;
+}

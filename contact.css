@@ -1,0 +1,83 @@
+.contact__container{
+    background: rgba(61, 0, 47, 0.915);
+    padding:4rem;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    gap:4rem;
+    height:30rem;
+    margin:20rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgb(255, 0, 195);
+}
+
+.contact__aside{
+    background:rgb(122, 5, 95);
+    box-shadow:0 0 20px white;
+    padding:3rem;
+    border-radius:1rem;
+    position:relative;
+    bottom:10rem;
+}
+.aside__image{
+    margin-left: 10%;
+    width:15rem;
+    margin-bottom:2rem;
+}
+.contact__aside h2{
+    text-align: center;
+}
+.contact__aside p{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom:2rem;
+}
+.contact__details li{
+margin-left: 24%;
+    display: flex;
+    gap:1rem;
+    margin-bottom:1rem;
+}
+.contact__socials{
+    display: flex;
+    gap:0.8rem;
+    margin-top:3rem;
+}
+.contact__socials a{
+    background:transparent;
+    padding:1.5rem;
+    border-radius:50%;
+    font-size: 1.5rem;
+    transition: all 500ms ease-in-out;
+}
+.contact__socials a:hover{
+    background:rgb(61, 0, 47);
+    transition: all 500ms ease-in-out;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORM~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact__form{
+    display:flex;
+    flex-direction: column;
+    gap:1.2rem;
+    margin-right:4rem;
+}
+.form__name{
+    display:flex;
+    gap:1.2rem;
+}
+.contact__form input[type="text"]{
+    width: 50%;
+}
+input,textarea{
+    width:100%;
+    padding:1rem;
+    border-radius: 1rem;
+    background:rgb(31, 0, 24) ;
+    color: whitesmoke;
+}
+.contact__form .btn{
+    width:max-content;
+    margin-top: 1rem;
+    cursor:pointer;
+}
